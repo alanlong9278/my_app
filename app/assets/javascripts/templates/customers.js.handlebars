@@ -1,0 +1,39 @@
+<nav class="navbar navbar-default navbar-fixed-top navbar-inverse" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+            {{#link-to 'customers' class="navbar-brand"}}Customers{{/link-to}}
+
+        </div>
+
+      </div>
+</nav>
+<div id="main" class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <table class='table'>
+          <thead>
+            <tr>
+                <th>CustomerID</th>
+                <th>CompanyName</th>
+            </tr>
+          </thead>
+          <tbody>
+           {{#each customer in model}}
+                <tr>
+                   <td>
+                      {{customer.CustomerID}}
+                  </td>
+                  <td>
+                      {{customer.CompanyName}}
+                  </td>
+                  <td>
+                         {{#link-to "customer" customer.id}}Detail{{/link-to}}
+                  </td>
+                </tr>
+            {{/each}}
+          </tbody>
+        </table>
+
+      </div>
+    </div>
+</div>

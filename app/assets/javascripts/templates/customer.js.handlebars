@@ -1,0 +1,62 @@
+<nav class="navbar navbar-default navbar-fixed-top navbar-inverse" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">Home</a>
+
+        </div>
+
+      </div>
+</nav>
+<div id="main" class="container">
+    <div id = "model_detail">
+        <table id="detail">
+        <tr class="lead">
+            <td class="title">modelID: </td>
+            <td>{{model.CustomerID}}</td>
+        </tr>
+        <tr class="lead">
+            <td class="title">CompanyName: </td>
+            <td>{{model.CompanyName}}</td>
+        </tr>
+        <tr class="lead">
+            <td class="title">ContactName: </td>
+            <td>{{model.ContactName}}</td>
+        </tr>
+        <tr class="lead">
+            <td class="title">ContactTitle: </td>
+            <td>{{model.ContactTitle}}</td>
+        </tr>
+        <tr class="lead">
+            <td class="title">Address: </td>
+            <td>{{model.Address}}</td>
+        </tr>
+        <tr class="lead">
+            <td class="title">City: </td>
+            <td>{{model.City}}</td>
+        </tr>
+        <tr class="lead">
+            <td class="title">Region: </td>
+            <td>{{model.Region}}</td>
+        </tr>
+        <tr class="lead">
+            <td class="title">PostalCode</td>
+            <td>{{model.PostalCode}}</td>
+        </tr>
+        <tr class="lead">
+            <td class="title">Country: </td>
+            <td>{{model.Country}}</td>
+        </tr>
+        <tr class="lead">
+            <td class="title">Phone: </td>
+            <td>{{model.Phone}}</td>
+        </tr>
+        <tr class="lead">
+            <td class="title">Fax: </td>
+            <td>{{model.Fax}}</td>
+        </tr>
+        </table>
+        <div style="margin-left:200px; font-size:20px; margin-top:10px;">
+           {{#link-to 'customers'}}Back{{/link-to}}
+        </div>
+    </div>
+</div>

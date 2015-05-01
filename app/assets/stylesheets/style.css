@@ -1,0 +1,19 @@
+/* Put your CSS here */
+html, body {
+    margin: 20px;
+}
+body{
+	padding-top: 40px;
+}
+
+.active{
+	font-weight: bold;
+}
+#customer_detail { padding-top: 50px;}
+.title { text-align: right; width: 200px;}
+#detail tr td {
+    padding-left: 10px;
+    font-size: 18px;
+    padding-top: 10px;
+
+}

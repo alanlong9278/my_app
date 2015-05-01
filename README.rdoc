@@ -1,0 +1,37 @@
+== README
+
+This is a simple Rails app to demonstrate using odata server and Ember.js with a basic RESTful persistence strategy.
+
+## Installation
+
+Assuming Ruby 1.9.2+ with bundler gem installed:
+
+    $ bundle install
+    $ bundle exec rake db:migrate
+    $ rails s
+
+
+## The steps to build the website.
+
+1, Learning odata and ember.js from the information you give, then get odata and ember.js gem.
+2, Trying to get the data from the odata server. It is too slowly to get the data, so I migrated the data to my local
+database by writing migration.
+3, Implementing the functions:
+- A List of Customers
+- User could click any customer from list to open the detail, which include CustomerID， ContactName， CompanyName and so on.
+- User could go back to list
+At first, I used the demo from https://github.com/dgeb/ember_rest_example. But {{link-to}} can not work when I want to
+add the link to jump to custom page. So, I searched the solution from the author's blog, stackoverflow, google, github, but I still didn't
+solve it.
+It cost 3 days to find the solution. I was collapsed.
+So I decided to build a new app. I  do it step by step from http://emberjs.com/ and https://github.com/emberjs/ember-rails.
+first, I write the <customer list> and <customer detail> page, then add the route to point to the two page. I added the link
+to the two page at the end.
+
+## The knowledge I learn from the contest
+1, Knowing the structure of ember, the simple usage of ember.js + ror and the usage of odata.
+2, Realizing that you can learn knowledge from the github, but don't use the demo directly. It is very precious to
+writing a new app by yourself, beacause you can get more knowledge and understand deeper.
+
+
+
